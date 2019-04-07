@@ -9,3 +9,11 @@
 // the time and then low.
 // This approach will move the PWM artifacts to higher
 // inaudible frequencies and hence improve the sound quality
+
+// Interface supports two addresses :
+// Addr[0] --> is the data register --> writes to this register will 
+// set a 16-bit sample value to be produced by the PWM logic.
+// Reads will also produce, in the 17th bit, whether the 
+// interrupt is set or not
+
+// If interrupt set - it's time to write a new data value -
