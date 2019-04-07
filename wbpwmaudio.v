@@ -10,3 +10,5 @@
 // This approach will move the PWM artifacts to higher
 // inaudible frequencies and hence improve the sound quality
 
+addr[2]
+
